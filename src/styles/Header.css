@@ -1,0 +1,85 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    position: sticky;
+    top:0;
+    z-index: 100;
+    background-color: white;
+}
+
+.header_logo{
+    height:25px;
+    /* width: 100px; */
+    object-fit: contain;
+    /* object-fit: contain;  Not required here since we are using vector image*/
+    margin-left: 20px;
+  
+}
+
+.header_input{
+    display: flex;
+    align-items: center;
+    width: 40%;
+    border: 1px solid black;
+       
+}
+
+.header_input>input{
+    flex:1;
+    border:none;
+    outline: none;
+    /* font-size: 16px;
+    font-weight: 400; */
+
+}
+
+    .header_input_button{
+        width: 50px !important;
+        background-color: #fafafa;
+        border: 1px solid lightgray;
+        color:gray;
+   
+    }
+
+
+
+.header_icons{
+    display: flex;
+    align-items: center;
+}
+
+.header_icon{
+    margin-right: 8px;
+}
+
+@media screen and (max-width: 480px) {
+    .header_left{
+        display: flex;
+        align-items: center;
+    }
+
+    .header_logo {
+        height: 18px;
+        /* width: 100px; */
+        object-fit: contain;
+        margin-left: 10px;
+    }
+
+    .header_input {
+        display: flex;
+
+        width: 100%;
+        /* flex: 1; */
+       margin-left: 20px;
+    }
+
+    .header_icons{
+        display: none;
+        visibility: hidden;
+    }
+
+ 
+
+  }
